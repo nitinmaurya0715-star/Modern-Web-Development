@@ -69,7 +69,7 @@ html, body{
     text-transform: uppercase;
     font-size: 17px;
     margin-top: 20px;
-    margin-left: 760px;
+    margin-left: 770px;
 }
 
 #chhotiheadings{
@@ -78,4 +78,49 @@ html, body{
 
 #chhotiheadings h5{
     text-align: right;
+    text-transform: uppercase;
+    margin-right: 50px;
+    font-size: 2vh;
+    margin-top: .5vh;
+
+}
+
+#herofooter{
+    padding: 0 2vh;
+    width: 100%;
+    position: absolute;
+    bottom: 1%;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+#herofooter span{
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-left: 50px;
+}
+
+#herofooter a{
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+#herofooter #iconset{
+    display: flex;
+    gap: 2px;
+}
+#herofooter .circle{
+    width: 25px;
+    height: 25px;
+    background-color: #888;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
