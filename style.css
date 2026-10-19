@@ -11,11 +11,32 @@ html, body{
     background-color: black;
 }
 
+#minicircle {
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    z-index: 99999;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.bounding {
+    width: fit-content;
+    overflow: hidden;
+    /* background-color: red; */
+}
+
+.bounding .boundingelem {
+    transform: translateY(130px);
+}
+
 #main{
     width: 100%;
 }
 
 #hero{
+    position: relative;
     color: #fff;
     width: 100%;
     height: 100vh;
@@ -63,7 +84,12 @@ html, body{
 }
 
 .blocktext {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
     width: fit-content;
+
+    /* background-color: red; */
 }
 
 .blocktext h5{
@@ -74,7 +100,11 @@ html, body{
 }
 
 #chhotiheadings{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
     margin-top: 100px;
+    
 }
 
 #chhotiheadings h5{
@@ -249,8 +279,109 @@ html, body{
 }
 
 
-/* #about{
-    padding: 10vw 5vw;
+#about{
+    display: flex;
+    align-items: flex-start;
+    /* justify-content: space-between; */
+    gap: 50px;
+    color: #fff;
+    padding: 10vw 10vw;
+    padding-left: 40vw;
     background-color: black;
     width: 100%;
-} */
+}
+
+#textabout {
+    width: 40rem;
+}
+
+#textabout h5{
+    margin-top: 20vh;
+    text-transform: uppercase;
+    opacity: .6;
+    margin-bottom: 10px;
+}
+
+#textabout p {
+    margin-top: 1vh;
+    font-family: "General Sans Medium", sans-serif;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+#textabout a {
+    font-family: "General Sans Medium", sans-serif;
+    padding: 12px 22px;
+    border: .5px solid #fff;
+    border-radius: 200px;
+    color: #fff;
+    font-size: 15px;
+    text-decoration: none;
+
+}
+#about img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-bottom: 100vh; */
+    /* margin-right: 100vh; */
+    margin-top: 25vh;
+    width: 230px;
+}
+
+#subscribe {
+    padding: 20px 30px;
+    color: #fff;
+}
+
+#subscribe h5 {
+    text-transform: uppercase;
+    opacity: .6;
+
+}
+
+#subscribe h3 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+    opacity: .7;
+    font-size: 15px;
+    gap: 1px;
+    margin-top: 2px;
+}
+
+#footer{
+    margin-bottom: 2vh;
+    margin-top: 10vh;
+    /* text-transform: uppercase; */
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 30px;
+}
+
+#footerleft {
+    display: flex;
+    gap: 40px;
+    font-size: 17px;
+    font-weight: 1000;
+    opacity: .6;
+}
+
+#footerleft h5 {
+    display: flex;
+    gap: 10px;
+}
+
+#footerright {
+    display: flex;
+    gap: 40px;
+}
+#footer a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: 1000;
+    opacity: .6;
+}
